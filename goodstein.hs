@@ -11,7 +11,7 @@ goodsteinIterate :: Int -> Int -> Int
 goodsteinIterate number base = (increaseBase number base) - 1
 
 
-goodsteinSequence :: Int -> Int -> Int
+goodsteinSequence :: Int -> Int -> [Int]
 goodsteinSequence initialNumber initialBase
   | initialNumber == 0 = [0]
   | otherwise = initialNumber : (goodsteinSequence (goodsteinIterate initialNumber initialBase) (initialBase + 1))
