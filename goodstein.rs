@@ -1,3 +1,5 @@
+// 2015 - Ahmet Cetinkaya
+
 use std::num::pow;
 
 fn increase_base_aux(number: uint, base: uint, i: uint, acc: uint) -> uint {
@@ -36,4 +38,3 @@ fn main() {
         println!("{}", i);
     }
 }
-
