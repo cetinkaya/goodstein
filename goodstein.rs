@@ -6,7 +6,8 @@ fn increase_base_aux(number: uint, base: uint, i: uint, acc: uint) -> uint {
     if number == 0 {
         acc
     } else {
-        increase_base_aux(number / base, base, i + 1, acc + (number % base) * pow(base+1, increase_base(i, base)))
+        increase_base_aux(number / base, base, i + 1,
+                          acc + (number % base) * pow(base + 1, increase_base_aux(i, base, 0, 0)))
     }
 }
 
