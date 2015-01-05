@@ -1,4 +1,4 @@
 goodstein
 =========
 
-Code to generate Goodstein sequences
+This project includes code in various programming languages for generating Goodstein sequences.
